@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Expletus+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap');
 body {
   margin: 0px;
   font-family: 'Expletus Sans', cursive;
@@ -9,6 +9,30 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
+}
+
+.linkedin {
+  position: absolute;
+  left: 35px;
+  bottom: 290px;
+  font-size: 26px;
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.git {
+  position: absolute;
+  left: 71px;
+  bottom: 290px;
+  font-size: 26px;
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.linkedin:hover, .git:hover {
+  opacity: 1;
 }
 
 .image {
@@ -26,12 +50,18 @@ body {
   margin: 0px;
   background-size: auto 100%;
 }
+
 .image:not(.active){
   flex-grow: 1;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
   /* border-radius: 5px; */
 }
+
+.image:not(.active) > .text-container > .logo {
+  display: none;
+}
+
 .text-container {
   width: 100%;
   height: 100%;
@@ -44,10 +74,13 @@ body {
   color: white;
   overflow: hidden;
 }
+
 .text {
-  position: absolute;
-  bottom: 5rem;
+    position: absolute;
+    bottom: 5rem;
+    width: 310px;
 }
+
 .active .text-container {
   visibility: visible;
   transform: translateY(0px);
@@ -57,4 +90,46 @@ body {
 
 .bio {
   margin: 40px;
+}
+
+.logo {
+  text-align: center;
+}
+
+img.logo-pyc {
+  width: 620px;
+  margin: auto;
+  transform: rotate(360deg);
+  animation-name: spin;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.logo-ws {
+  font-size: 150px;
+  font-family: "Space Grotesk";
+}
+h3 {
+  font-size: 24px;
+}
+
+
+.description {
+  font-style: italic;
+    font-size: 15px;
+    opacity: 0.7;
+
+}
+/* img.logo-pyc:hover {
+  transform: rotate(360deg);
+} */
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
