@@ -121,9 +121,26 @@ h3 {
     opacity: 0.7;
 
 }
-/* img.logo-pyc:hover {
-  transform: rotate(360deg);
-} */
+
+.logo-navbar {
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    /* height: 100vh; */
+    /* width: 16%; */
+    /* position: relative; */
+    /* border-right: 2px black solid; */
+    /* z-index: 1000; */
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 190px;
+    /* transform: rotate(
+-90deg
+); */
+    position: absolute;
+    top: -179px;
+    left: 86px;
+}
+
 
 @keyframes spin {
     from {
