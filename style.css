@@ -58,8 +58,12 @@ body {
   /* border-radius: 5px; */
 }
 
-.image:not(.active) > .text-container > .logo {
-  display: none;
+.image:not(.active) > .text-container .logo, h1 {
+display: none !important;
+}
+
+.image.active > .text-container h1 {
+display: block !important;
 }
 
 .text-container {
@@ -77,8 +81,8 @@ body {
 
 .text {
     position: absolute;
-    bottom: 5rem;
-    width: 310px;
+    bottom: 4rem;
+    width: 290px;
 }
 
 .active .text-container {
@@ -96,6 +100,16 @@ body {
   text-align: center;
 }
 
+.logo-enter {
+  position: absolute;
+  left: 35px;
+  bottom: 290px;
+  font-size: 26px;
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
 img.logo-pyc {
   width: 620px;
   margin: auto;
@@ -106,10 +120,17 @@ img.logo-pyc {
   animation-timing-function: linear;
 }
 
-.logo-ws {
+.logo-wesurf {
+  text-decoration: none !important ;
+  color:white;
   font-size: 150px;
   font-family: "Space Grotesk";
 }
+
+.link-ws {
+  text-decoration: none !important ;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -125,17 +146,9 @@ h3 {
 .logo-navbar {
   font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    /* height: 100vh; */
-    /* width: 16%; */
-    /* position: relative; */
-    /* border-right: 2px black solid; */
-    /* z-index: 1000; */
     font-family: 'Helvetica Neue';
     font-weight: 400;
     font-size: 190px;
-    /* transform: rotate(
--90deg
-); */
     position: absolute;
     top: -179px;
     left: 86px;
