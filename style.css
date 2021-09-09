@@ -14,7 +14,7 @@ body {
 .linkedin {
   position: absolute;
   left: 35px;
-  bottom: 290px;
+  bottom: 272px;
   font-size: 26px;
   color: white;
   opacity: 0.7;
@@ -24,7 +24,7 @@ body {
 .git {
   position: absolute;
   left: 71px;
-  bottom: 290px;
+  bottom: 272px;
   font-size: 26px;
   color: white;
   opacity: 0.7;
@@ -92,9 +92,7 @@ display: block !important;
   width: inherit;
 }
 
-.bio {
-  margin: 40px;
-}
+
 
 .logo {
   text-align: center;
@@ -110,15 +108,7 @@ display: block !important;
   transition: opacity 0.2s ease-in-out;
 }
 
-img.logo-pyc {
-  width: 620px;
-  margin: auto;
-  transform: rotate(360deg);
-  animation-name: spin;
-  animation-duration: 50s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+
 
 .logo-wesurf {
   text-decoration: none !important ;
@@ -138,8 +128,9 @@ h3 {
 
 .description {
   font-style: italic;
-    font-size: 15px;
-    opacity: 0.7;
+  font-size: 15px;
+  opacity: 0.7;
+  text-align: justify;
 
 }
 
@@ -154,6 +145,15 @@ h3 {
     left: 86px;
 }
 
+img.logo-pyc {
+  width: 620px;
+  margin: auto;
+  transform: rotate(360deg);
+  animation-name: spin;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
 @keyframes spin {
     from {
