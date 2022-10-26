@@ -21,7 +21,7 @@ body {
   transition: opacity 0.2s ease-in-out;
 }
 
-.git {
+.github {
   position: absolute;
   left: 71px;
   bottom: 272px;
@@ -31,7 +31,17 @@ body {
   transition: opacity 0.2s ease-in-out;
 }
 
-.linkedin:hover, .git:hover {
+.gitlab {
+  position: absolute;
+  left: 108px;
+  bottom: 272px;
+  font-size: 26px;
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.linkedin:hover, .github:hover, .gitlab:hover {
   opacity: 1;
 }
 
